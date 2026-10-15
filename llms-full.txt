@@ -1,0 +1,362 @@
+# MacHub - Full Documentation
+
+> Expanded version of https://machub.space/llms.txt. Each section below is the markdown mirror of a page.
+
+
+---
+
+## MacHub (https://machub.space/)
+
+# MacHub
+
+> MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.
+
+MacHub is a free macOS app (v1.0.0, macOS 12+, Apple Silicon and Intel). Distributed as a DMG from https://machub.space/download/.
+
+## Tools
+
+### Files & Paths
+
+- **Path Checker**: Paste or drop a path and instantly see whether it is a file, a folder or missing. Reveal it in Finder, copy it, and revisit your last 50 checks.
+- **File Utilities**: Bookmark the files you edit often, like ~/.zshrc or /etc/hosts, and open them in any app or run a saved shell command on them.
+- **Dir Utilities**: Tag and filter your workspace folders, then open them in Finder, VS Code, Cursor, Android Studio, Xcode, IntelliJ, iTerm and more.
+
+### Text & Data
+
+- **Payload Decoder**: Auto-detects and unwraps layered payloads (JWT, JSON, URL encoding, hex, Gzip, Base64) up to eight layers deep, shown as a JSON tree.
+- **Data Format**: Pretty-print or minify JSON, XML, HTML, YAML, CSV, query strings, SQL and CSS, with find and a tree view.
+- **Text Diff**: Side-by-side diff with line and character-level highlights, next/previous navigation and search.
+- **Base64 Image**: Decode one or many base64 strings or data URIs into images you can preview, repair, copy or save in bulk.
+
+### Devices & Packages
+
+- **Device Logs**: Live adb logcat, flutter logs and iOS syslog (devices and simulators) with level, package and text filters.
+- **Package Analyzer**: Inspect any APK, AAB or IPA: versions, SDKs, permissions, signing, native libraries, provisioning and a size breakdown.
+- **Project Analyzer**: Scan a folder for languages, lines of code, largest files and detected stacks, with a git change summary.
+- **AAB to APK**: Convert an Android App Bundle into an installable universal APK with bundletool, then install it on a connected device.
+
+### Utilities
+
+- **Screenshot OCR**: Capture any region and read its text with Apple Vision, on your Mac. Optionally translate it into 15 languages.
+- **Custom Commands**: Save the shell commands you keep retyping and run them in the background or in Terminal.
+- **Git Clone**: Clone through the right SSH account alias and add web and upstream remotes in one go.
+
+## Privacy
+
+No account, no analytics, no ads. Data stays in local preferences. Network requests happen only when you ask: Google Translate (OCR translation), the GitHub API (fork parent lookup) and the Changelog page. See https://machub.space/privacy/.
+
+## FAQ
+
+### Is MacHub free?
+
+Yes. MacHub is free to download and use.
+
+### Does MacHub collect my data?
+
+No. There is no account, no analytics, no crash reporting and no ads. Your bookmarks, commands and history stay in your Mac’s local preferences. The few network requests the app can make only happen when you ask for them; see [the Privacy Policy](https://machub.space/privacy/).
+
+### Which Macs does it run on?
+
+macOS 12 Monterey or later, on Apple Silicon and Intel. Automatic language detection in Screenshot OCR for Chinese, Japanese and Korean needs macOS 13 or later.
+
+### Why isn’t it on the Mac App Store?
+
+MacHub launches tools such as adb, git and bundletool and reads files you choose, so it runs outside the App Sandbox. That is why it is distributed as a DMG from this site.
+
+### Do I need the Android SDK, Flutter or git installed?
+
+Only for the tools that use them. MacHub looks in the usual locations, shows an install hint when something is missing, and lets you point it at the right file with **Set path…**.
+
+## On this site
+
+- [Download](https://machub.space/download/)
+- [Support](https://machub.space/support/)
+- [Changelog](https://machub.space/changelog/)
+- [Privacy Policy](https://machub.space/privacy/)
+- [Terms of Use](https://machub.space/terms/)
+
+## Contact
+
+machub1193@gmail.com
+
+
+---
+
+## Download MacHub for Mac (https://machub.space/download/)
+
+# Download MacHub for Mac
+
+> MacHub v1.0.0 for macOS 12+, Apple Silicon and Intel. Free.
+
+One DMG for Apple Silicon and Intel Macs. Free.
+
+- **Version:** 1.0.0
+- **Requires:** macOS 12 or later
+- **Architecture:** Apple Silicon & Intel
+- **Price:** Free
+
+## Install
+
+- Open `MacHub.dmg`.
+- Drag **MacHub** into your **Applications** folder.
+- Open MacHub from Applications or Launchpad.
+
+## If macOS says MacHub can’t be opened
+
+MacHub is signed with an Apple Developer ID and notarized by Apple, so macOS only asks you to confirm the first launch by clicking **Open**. If macOS still blocks it, do either of these once:
+
+- Right-click (or Control-click) MacHub in Applications, choose **Open**, then **Open** again.
+- Or open **System Settings › Privacy & Security**, scroll to the message about MacHub and click **Open Anyway**.
+
+Only download MacHub from machub.space.
+
+## Optional tools
+
+MacHub works on its own. Some tools use command-line programs you install separately:
+
+- **Device Logs:** `adb` (Android platform-tools), `flutter`, `idevicesyslog` (libimobiledevice) and Xcode’s `xcrun`
+- **AAB to APK:** `bundletool` (`brew install bundletool`), plus Java if you use a `bundletool.jar`, and `adb` for installing
+- **Git Clone and Project Analyzer:** `git`
+- **Package Analyzer:** `apksigner` from the Android SDK build-tools is optional
+
+## Permissions you may be asked for
+
+- **Screen Recording:** Screenshot OCR captures a region you select
+- **Automation:** opening Terminal for commands and a Finder fallback for protected files
+- **Full Disk Access (optional):** only if you bookmark files macOS protects
+
+## Uninstall
+
+Quit MacHub and drag it to the Trash. To remove its saved data too, see [How do I reset MacHub?](https://machub.space/support/#reset)
+
+---
+
+*Markdown version of [https://machub.space/download/](https://machub.space/download/) for AI/LLM consumption.*
+
+
+---
+
+## MacHub Support (https://machub.space/support/)
+
+# MacHub Support
+
+> Help, FAQ and contact for MacHub.
+
+Find a quick answer below, or email us and include your macOS version and the tool you were using.
+
+### Contact
+
+Questions, bug reports and feature requests are welcome.
+
+[Email support](mailto:machub1193@gmail.com)
+
+### Download
+
+Get the latest MacHub for macOS 12 or later.
+
+[Download .dmg](https://machub.space/download/)
+
+### macOS says MacHub can’t be opened or is from an unidentified developer
+
+MacHub is notarized by Apple, so macOS only asks you to confirm the first launch. If it still blocks the app, right-click MacHub in Applications and choose **Open**, or use **Open Anyway** in System Settings › Privacy & Security. See [the download page](https://machub.space/download/#gatekeeper).
+
+### A tool says adb, flutter, bundletool, git or java was not found
+
+MacHub checks common install locations (Homebrew, the Android SDK, your login shell) and remembers what it finds. If a tool is installed somewhere unusual, click **Set path…** in the banner and enter its full path. Homebrew users can run `brew install bundletool` or `brew install openjdk`.
+
+### Screenshot OCR captures nothing or a blank image
+
+Allow MacHub under **System Settings › Privacy & Security › Screen Recording**, then quit and reopen MacHub. Automatic language detection for Chinese, Japanese and Korean needs macOS 13 or later; macOS 12 reads Latin script only.
+
+### MacHub can’t open one of my bookmarked files
+
+macOS protects some locations. Grant MacHub **Full Disk Access** in System Settings › Privacy & Security, then try again.
+
+### Convert & Install fails with INSTALL_FAILED_UPDATE_INCOMPATIBLE
+
+The app on your device was signed with a different key than the one MacHub used. Uninstall the existing app from the device, or enable **Use custom keystore** and sign with the original key.
+
+### The device list is empty in Device Logs or Convert & Install
+
+Connect the device, enable USB debugging, accept the prompt on the device, then click the refresh button next to the device picker. Devices marked unauthorized or offline cannot be used until they are authorized.
+
+### Which Macs are supported?
+
+macOS 12 Monterey or later, on Apple Silicon and Intel.
+
+### How do I reset MacHub?
+
+Quit MacHub, then run `defaults delete com.app.machub` in Terminal. This removes bookmarks, saved commands, history, tool paths and preferences. To uninstall, also drag MacHub to the Trash.
+
+---
+
+*Markdown version of [https://machub.space/support/](https://machub.space/support/) for AI/LLM consumption.*
+
+
+---
+
+## MacHub Changelog (https://machub.space/changelog/)
+
+# MacHub Changelog
+
+> Release notes for MacHub.
+
+## Version 1.0.0 Initial release
+
+The first public release includes 14 tools in four groups, light and dark themes and a collapsible sidebar.
+
+- **Path Checker:** Paste or drop a path and instantly see whether it is a file, a folder or missing. Reveal it in Finder, copy it, and revisit your last 50 checks.
+- **File Utilities:** Bookmark the files you edit often, like ~/.zshrc or /etc/hosts, and open them in any app or run a saved shell command on them.
+- **Dir Utilities:** Tag and filter your workspace folders, then open them in Finder, VS Code, Cursor, Android Studio, Xcode, IntelliJ, iTerm and more.
+- **Payload Decoder:** Auto-detects and unwraps layered payloads (JWT, JSON, URL encoding, hex, Gzip, Base64) up to eight layers deep, shown as a JSON tree.
+- **Data Format:** Pretty-print or minify JSON, XML, HTML, YAML, CSV, query strings, SQL and CSS, with find and a tree view.
+- **Text Diff:** Side-by-side diff with line and character-level highlights, next/previous navigation and search.
+- **Base64 Image:** Decode one or many base64 strings or data URIs into images you can preview, repair, copy or save in bulk.
+- **Device Logs:** Live adb logcat, flutter logs and iOS syslog (devices and simulators) with level, package and text filters.
+- **Package Analyzer:** Inspect any APK, AAB or IPA: versions, SDKs, permissions, signing, native libraries, provisioning and a size breakdown.
+- **Project Analyzer:** Scan a folder for languages, lines of code, largest files and detected stacks, with a git change summary.
+- **AAB to APK:** Convert an Android App Bundle into an installable universal APK with bundletool, then install it on a connected device.
+- **Screenshot OCR:** Capture any region and read its text with Apple Vision, on your Mac. Optionally translate it into 15 languages.
+- **Custom Commands:** Save the shell commands you keep retyping and run them in the background or in Terminal.
+- **Git Clone:** Clone through the right SSH account alias and add web and upstream remotes in one go.
+
+---
+
+*Markdown version of [https://machub.space/changelog/](https://machub.space/changelog/) for AI/LLM consumption.*
+
+
+---
+
+## MacHub Privacy Policy (https://machub.space/privacy/)
+
+# MacHub Privacy Policy
+
+> No account, no analytics, no ads. Last updated October 7, 2026.
+
+**Last updated:** October 7, 2026
+
+This policy explains what the MacHub app and the machub.space website do with information. In short: the app has no account, no analytics, no advertising and no tracking.
+
+## 1. Overview
+
+MacHub is a desktop toolbox for macOS. It works with files, folders, text and command-line tools that you choose. The developer does not receive that content.
+
+## 2. Data stored on your Mac
+
+MacHub saves the following in your Mac’s local preferences (`~/Library/Preferences/com.app.machub.plist`):
+
+- Bookmarked files and folders, tags, and the custom editor or command you attach to them
+- Saved Custom Commands
+- Last-used folders, tool paths, theme and sidebar settings
+- History for Path Checker, Payload Decoder, Data Format and Text Diff (up to 50 entries each)
+
+History entries can contain the full text you pasted, including tokens or other secrets. Delete the preferences to remove everything (see [How do I reset MacHub?](https://machub.space/support/#reset)).
+
+MacHub also writes temporary files, for example the Screenshot OCR capture and images you copy from Base64 Image, to your Mac’s temporary folder. Files you export or save go where you choose.
+
+## 3. Network requests
+
+MacHub does not check for updates and does not contact the developer. The app makes a network request only when you use one of these features:
+
+- **Screenshot OCR › Translate:** sends the recognized text and the target language to Google Translate. Text recognition itself runs on your Mac.
+- **Git Clone › upstream remote:** for github.com repositories, asks the GitHub API (unauthenticated) for the fork’s parent repository.
+- **Settings › Changelog:** loads the changelog page in an in-app web view.
+
+Those services handle data under their own privacy policies.
+
+## 4. Tools you run
+
+Git Clone, Device Logs, AAB to APK, Custom Commands and similar tools run programs such as `git`, `adb` and `bundletool` with your user permissions. Any network access by those programs, or by commands you write, is governed by the programs and services involved. MacHub reads host aliases from `~/.ssh/config` (not your keys) and checks for `~/.android/debug.keystore`.
+
+## 5. Permissions
+
+- **Screen Recording:** to capture the region you select for OCR, only when you start a capture
+- **Automation (Apple Events):** to open Terminal for commands and as a Finder fallback
+- **Full Disk Access:** optional, only for files macOS protects
+
+## 6. Clipboard
+
+MacHub reads the clipboard only when you press a Paste button. It writes to the clipboard when you press a Copy action. It never monitors the clipboard.
+
+## 7. Keystore passwords
+
+Passwords you enter for a custom keystore are not saved. They are passed to bundletool as command-line arguments while a conversion runs, so other processes on your Mac could briefly see them. They are masked in MacHub’s on-screen log.
+
+## 8. Analytics, ads and accounts
+
+The app contains no analytics, crash-reporting or advertising SDKs, and requires no account.
+
+## 9. This website
+
+machub.space is a static site hosted on GitHub Pages, which may log visitor IP addresses under GitHub’s privacy statement. The site sets no cookies and runs no analytics. Your light or dark theme choice is stored in your browser’s local storage.
+
+The DMG is served through a Cloudflare Worker. To limit abuse it uses your IP address to count downloads (a small number per hour), and may ask you to complete a Cloudflare Turnstile check. Cloudflare processes that data under its own policies.
+
+## 10. Children
+
+MacHub is a developer tool and is not directed at children under 13.
+
+## 11. Changes
+
+We may update this policy. The date at the top shows the latest revision.
+
+## 12. Contact
+
+Questions: [machub1193@gmail.com](mailto:machub1193@gmail.com)
+
+---
+
+*Markdown version of [https://machub.space/privacy/](https://machub.space/privacy/) for AI/LLM consumption.*
+
+
+---
+
+## MacHub Terms of Use (https://machub.space/terms/)
+
+# MacHub Terms of Use
+
+> Terms of Use. Last updated October 7, 2026.
+
+**Last updated:** October 7, 2026
+
+By downloading or using MacHub you agree to these terms. If you do not agree, do not use the app.
+
+## 1. The product
+
+MacHub is a free desktop app for macOS that bundles developer utilities. Features may change over time.
+
+## 2. License
+
+You receive a non-exclusive, non-transferable license to install and use MacHub on Macs you own or control. All rights not expressly granted are reserved by the developer. Do not sell or redistribute MacHub, and do not present modified copies as MacHub.
+
+## 3. Third-party tools and services
+
+MacHub works with software it does not include, such as adb, Flutter, bundletool, Java and git, and can call services such as Google Translate and the GitHub API. Those are governed by their own licenses and terms.
+
+## 4. Your responsibility
+
+MacHub runs commands and reads or changes files on your Mac with your permissions, including commands you write yourself and installs onto connected devices. Review what you run, keep backups, and only use MacHub on files, devices and accounts you are authorized to use. Keep your keystores and passwords safe.
+
+## 5. Downloads and updates
+
+Download MacHub only from machub.space. We are not responsible for copies obtained elsewhere. Download limits may apply.
+
+## 6. Disclaimer
+
+MacHub is provided “as is” and “as available”, without warranties of any kind, express or implied, including fitness for a particular purpose and non-infringement. We do not guarantee that the output of any tool is accurate or complete.
+
+## 7. Limitation of liability
+
+To the maximum extent permitted by law, the developer is not liable for any indirect, incidental or consequential damages, or for lost data, profits or goodwill, arising from your use of MacHub.
+
+## 8. Changes
+
+We may update these terms. Continued use after an update means you accept the new terms.
+
+## 9. Contact
+
+Questions: [machub1193@gmail.com](mailto:machub1193@gmail.com)
+
+---
+
+*Markdown version of [https://machub.space/terms/](https://machub.space/terms/) for AI/LLM consumption.*

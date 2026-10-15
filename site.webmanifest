@@ -1,0 +1,21 @@
+{
+  "name": "MacHub",
+  "short_name": "MacHub",
+  "description": "MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#fbf8f7",
+  "theme_color": "#f0323c",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Paste the Cloudflare Worker download URL below (one line, https) AFTER you deploy
+# cloudflare/download-worker (see that folder's README), for example:
+# https://machub-macos-dmg.<your-subdomain>.workers.dev/releases/macos/MacHub.dmg
+# While this file has no URL, download buttons show "Download coming soon".
+# Do not use a public r2.dev URL: it bypasses the Worker's rate limit.
+https://machub-macos-dmg.machub.workers.dev/releases/macos/MacHub.dmg

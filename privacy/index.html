@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<title>Privacy Policy - MacHub</title>
+<meta name="description" content="MacHub has no account, analytics or ads. Learn what the app stores locally and the few network requests it can make.">
+<meta name="robots" content="index, follow">
+<meta name="application-name" content="MacHub">
+<meta name="theme-color" content="#fbf8f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0d10" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://machub.space/privacy/">
+<link rel="alternate" type="text/plain" title="LLM context" href="https://machub.space/llms.txt">
+<link rel="alternate" type="text/plain" title="LLM full context" href="https://machub.space/llms-full.txt">
+<link rel="alternate" type="text/markdown" href="https://machub.space/privacy/index.md">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+<link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MacHub">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://machub.space/privacy/">
+<meta property="og:title" content="Privacy Policy - MacHub">
+<meta property="og:description" content="MacHub has no account, analytics or ads. Learn what the app stores locally and the few network requests it can make.">
+<meta property="og:image" content="https://machub.space/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy - MacHub">
+<meta name="twitter:description" content="MacHub has no account, analytics or ads. Learn what the app stores locally and the few network requests it can make.">
+<meta name="twitter:image" content="https://machub.space/assets/images/og-image.png">
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/"><img src="/assets/images/icon-192.png" width="34" height="34" alt="">MacHub</a>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="/#tools">Tools</a>
+      <a href="/#privacy">Privacy</a>
+      <a href="/download/">Download</a>
+      <a href="/support/">Support</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle light and dark theme"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<div class="container">
+  <div class="page-head"><span class="eyebrow">Legal</span><h1>Privacy Policy</h1><p><strong>Last updated:</strong> October 7, 2026</p></div>
+  <div class="policy">
+    <p>This policy explains what the MacHub app and the machub.space website do with information. In short: the app has no account, no analytics, no advertising and no tracking.</p>
+    <h2>1. Overview</h2>
+    <p>MacHub is a desktop toolbox for macOS. It works with files, folders, text and command-line tools that you choose. The developer does not receive that content.</p>
+    <h2>2. Data stored on your Mac</h2>
+    <p>MacHub saves the following in your Mac&rsquo;s local preferences (<code>~/Library/Preferences/com.app.machub.plist</code>):</p>
+    <ul><li>Bookmarked files and folders, tags, and the custom editor or command you attach to them</li><li>Saved Custom Commands</li><li>Last-used folders, tool paths, theme and sidebar settings</li><li>History for Path Checker, Payload Decoder, Data Format and Text Diff (up to 50 entries each)</li></ul>
+    <p class="note">History entries can contain the full text you pasted, including tokens or other secrets. Delete the preferences to remove everything (see <a href="/support/#reset">How do I reset MacHub?</a>).</p>
+    <p>MacHub also writes temporary files, for example the Screenshot OCR capture and images you copy from Base64 Image, to your Mac&rsquo;s temporary folder. Files you export or save go where you choose.</p>
+    <h2>3. Network requests</h2>
+    <p>MacHub does not check for updates and does not contact the developer. The app makes a network request only when you use one of these features:</p>
+    <ul><li><strong>Screenshot OCR &rsaquo; Translate:</strong> sends the recognized text and the target language to Google Translate. Text recognition itself runs on your Mac.</li><li><strong>Git Clone &rsaquo; upstream remote:</strong> for github.com repositories, asks the GitHub API (unauthenticated) for the fork&rsquo;s parent repository.</li><li><strong>Settings &rsaquo; Changelog:</strong> loads the changelog page in an in-app web view.</li></ul>
+    <p>Those services handle data under their own privacy policies.</p>
+    <h2>4. Tools you run</h2>
+    <p>Git Clone, Device Logs, AAB to APK, Custom Commands and similar tools run programs such as <code>git</code>, <code>adb</code> and <code>bundletool</code> with your user permissions. Any network access by those programs, or by commands you write, is governed by the programs and services involved. MacHub reads host aliases from <code>~/.ssh/config</code> (not your keys) and checks for <code>~/.android/debug.keystore</code>.</p>
+    <h2>5. Permissions</h2>
+    <ul><li><strong>Screen Recording:</strong> to capture the region you select for OCR, only when you start a capture</li><li><strong>Automation (Apple Events):</strong> to open Terminal for commands and as a Finder fallback</li><li><strong>Full Disk Access:</strong> optional, only for files macOS protects</li></ul>
+    <h2>6. Clipboard</h2>
+    <p>MacHub reads the clipboard only when you press a Paste button. It writes to the clipboard when you press a Copy action. It never monitors the clipboard.</p>
+    <h2>7. Keystore passwords</h2>
+    <p>Passwords you enter for a custom keystore are not saved. They are passed to bundletool as command-line arguments while a conversion runs, so other processes on your Mac could briefly see them. They are masked in MacHub&rsquo;s on-screen log.</p>
+    <h2>8. Analytics, ads and accounts</h2>
+    <p>The app contains no analytics, crash-reporting or advertising SDKs, and requires no account.</p>
+    <h2>9. This website</h2>
+    <p>machub.space is a static site hosted on GitHub Pages, which may log visitor IP addresses under GitHub&rsquo;s privacy statement. The site sets no cookies and runs no analytics. Your light or dark theme choice is stored in your browser&rsquo;s local storage.</p>
+    <p>The DMG is served through a Cloudflare Worker. To limit abuse it uses your IP address to count downloads (a small number per hour), and may ask you to complete a Cloudflare Turnstile check. Cloudflare processes that data under its own policies.</p>
+    <h2>10. Children</h2>
+    <p>MacHub is a developer tool and is not directed at children under 13.</p>
+    <h2>11. Changes</h2>
+    <p>We may update this policy. The date at the top shows the latest revision.</p>
+    <h2>12. Contact</h2>
+    <p>Questions: <a href="mailto:machub1193@gmail.com">machub1193@gmail.com</a></p>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><img src="/assets/images/icon-192.png" width="34" height="34" alt="">MacHub</a>
+        <p>14 developer tools. One Mac app. Local-first, no account, no tracking.</p>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="/#tools">Tools</a></li><li><a href="/download/">Download</a></li><li><a href="/changelog/">Changelog</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="/support/">Help &amp; FAQ</a></li><li><a href="mailto:machub1193@gmail.com">Email</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; <span data-year>2026</span> MacHub. All rights reserved.</span><span>Made for developers on macOS</span></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

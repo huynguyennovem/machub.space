@@ -1,0 +1,42 @@
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Content signals (https://contentsignals.org/)
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: https://machub.space/sitemap.xml
+
+# AI-friendly summaries:
+# https://machub.space/llms.txt
+# https://machub.space/llms-full.txt
+# https://machub.space/**/index.md (markdown mirror of each page)

@@ -1,0 +1,14 @@
+.DS_Store
+*.log
+.idea/
+
+# Cloudflare Workers local artifacts
+cloudflare/download-worker/node_modules/
+cloudflare/download-worker/.wrangler/
+*.sqlite*
+
+# Never commit installers
+*.dmg
+
+# Local preview config
+.claude/
