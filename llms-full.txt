@@ -9,9 +9,9 @@
 
 # MacHub
 
-> MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.
+> MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account. Anonymous usage stats are opt-in.
 
-MacHub is a free macOS app (v1.0.0, macOS 12+, Apple Silicon and Intel). Distributed as a DMG from https://machub.space/download/.
+MacHub is a free macOS app (v1.1.0, macOS 12+, Apple Silicon and Intel). Distributed as a DMG from https://machub.space/download/.
 
 ## Tools
 
@@ -43,7 +43,7 @@ MacHub is a free macOS app (v1.0.0, macOS 12+, Apple Silicon and Intel). Distrib
 
 ## Privacy
 
-No account, no analytics, no ads. Data stays in local preferences. Network requests happen only when you ask: Google Translate (OCR translation), the GitHub API (fork parent lookup) and the Changelog page. See https://machub.space/privacy/.
+No account and no ads. Data stays in local preferences. Anonymous usage statistics are off unless you choose Share when MacHub asks, and you can change that in Settings › Privacy. Other network requests happen only when you ask: Google Translate (OCR translation), the GitHub API (fork parent lookup) and the Changelog page. See https://machub.space/privacy/.
 
 ## FAQ
 
@@ -53,7 +53,7 @@ Yes. MacHub is free to download and use.
 
 ### Does MacHub collect my data?
 
-No. There is no account, no analytics, no crash reporting and no ads. Your bookmarks, commands and history stay in your Mac’s local preferences. The few network requests the app can make only happen when you ask for them; see [the Privacy Policy](https://machub.space/privacy/).
+Only if you choose to share anonymous usage statistics. There is no account, no crash reporting and no ads. The first time you open MacHub it asks whether to share usage statistics; nothing is sent unless you choose Share, and you can change that anytime in Settings › Privacy. Your bookmarks, commands and history stay in your Mac’s local preferences. The other network requests the app can make only happen when you ask for them; see [the Privacy Policy](https://machub.space/privacy/).
 
 ### Which Macs does it run on?
 
@@ -86,11 +86,11 @@ machub1193@gmail.com
 
 # Download MacHub for Mac
 
-> MacHub v1.0.0 for macOS 12+, Apple Silicon and Intel. Free.
+> MacHub v1.1.0 for macOS 12+, Apple Silicon and Intel. Free.
 
 One DMG for Apple Silicon and Intel Macs. Free.
 
-- **Version:** 1.0.0
+- **Version:** 1.1.0
 - **Requires:** macOS 12 or later
 - **Architecture:** Apple Silicon & Intel
 - **Price:** Free
@@ -156,6 +156,10 @@ Get the latest MacHub for macOS 12 or later.
 
 [Download .dmg](https://machub.space/download/)
 
+### Support MacHub
+
+If MacHub saves you time, you can [buy me a coffee](https://buymeacoffee.com/huynguyennovem).
+
 ### macOS says MacHub can’t be opened or is from an unidentified developer
 
 MacHub is notarized by Apple, so macOS only asks you to confirm the first launch. If it still blocks the app, right-click MacHub in Applications and choose **Open**, or use **Open Anyway** in System Settings › Privacy & Security. See [the download page](https://machub.space/download/#gatekeeper).
@@ -188,6 +192,8 @@ macOS 12 Monterey or later, on Apple Silicon and Intel.
 
 Quit MacHub, then run `defaults delete com.app.machub` in Terminal. This removes bookmarks, saved commands, history, tool paths and preferences. To uninstall, also drag MacHub to the Trash.
 
+To stop sharing anonymous usage statistics, turn off Settings › Privacy › Share anonymous usage data. To also remove the random identifier used for usage statistics, delete the `com.telemetrydeck.*.plist` files in `~/Library/Preferences` (this also resets other apps that use TelemetryDeck).
+
 ---
 
 *Markdown version of [https://machub.space/support/](https://machub.space/support/) for AI/LLM consumption.*
@@ -200,6 +206,13 @@ Quit MacHub, then run `defaults delete com.app.machub` in Terminal. This removes
 # MacHub Changelog
 
 > Release notes for MacHub.
+
+## Version 1.1.0 About page and optional usage statistics
+
+This release adds an About page and, only if you choose it, anonymous usage statistics.
+
+- **About:** A new page right under Settings with the version, the changelog, the author on X, the support page and a Buy me a coffee button. Version and Changelog moved here from Settings.
+- **Usage statistics (optional):** MacHub asks once whether to share anonymous usage statistics. Nothing is sent unless you choose Share, and you can change it anytime in Settings › Privacy. See the [Privacy Policy](https://machub.space/privacy/#usage-stats).
 
 ## Version 1.0.0 Initial release
 
@@ -231,11 +244,11 @@ The first public release includes 14 tools in four groups, light and dark themes
 
 # MacHub Privacy Policy
 
-> No account, no analytics, no ads. Last updated October 7, 2026.
+> No account, no ads, usage statistics are opt-in. Last updated October 17, 2026.
 
-**Last updated:** October 7, 2026
+**Last updated:** October 17, 2026
 
-This policy explains what the MacHub app and the machub.space website do with information. In short: the app has no account, no analytics, no advertising and no tracking.
+This policy explains what the MacHub app and the machub.space website do with information. In short: the app has no account and no advertising, and it sends anonymous usage statistics only if you choose to share them.
 
 ## 1. Overview
 
@@ -247,7 +260,7 @@ MacHub saves the following in your Mac’s local preferences (`~/Library/Prefere
 
 - Bookmarked files and folders, tags, and the custom editor or command you attach to them
 - Saved Custom Commands
-- Last-used folders, tool paths, theme and sidebar settings
+- Last-used folders, tool paths, theme, sidebar and usage statistics settings
 - History for Path Checker, Payload Decoder, Data Format and Text Diff (up to 50 entries each)
 
 History entries can contain the full text you pasted, including tokens or other secrets. Delete the preferences to remove everything (see [How do I reset MacHub?](https://machub.space/support/#reset)).
@@ -256,11 +269,12 @@ MacHub also writes temporary files, for example the Screenshot OCR capture and i
 
 ## 3. Network requests
 
-MacHub does not check for updates and does not contact the developer. The app makes a network request only when you use one of these features:
+MacHub does not check for updates. The app makes a network request only when you use one of these features or turn on usage statistics:
 
 - **Screenshot OCR › Translate:** sends the recognized text and the target language to Google Translate. Text recognition itself runs on your Mac.
 - **Git Clone › upstream remote:** for github.com repositories, asks the GitHub API (unauthenticated) for the fork’s parent repository.
-- **Settings › Changelog:** loads the changelog page in an in-app web view.
+- **About › Changelog:** loads the changelog page in an in-app web view.
+- **Usage statistics (optional):** if you choose Share, sends anonymous usage signals to TelemetryDeck (see section 8).
 
 Those services handle data under their own privacy policies.
 
@@ -282,9 +296,24 @@ MacHub reads the clipboard only when you press a Paste button. It writes to the 
 
 Passwords you enter for a custom keystore are not saved. They are passed to bundletool as command-line arguments while a conversion runs, so other processes on your Mac could briefly see them. They are masked in MacHub’s on-screen log.
 
-## 8. Analytics, ads and accounts
+## 8. Usage statistics, ads and accounts
 
-The app contains no analytics, crash-reporting or advertising SDKs, and requires no account.
+The app contains no advertising or crash-reporting SDKs and requires no account.
+
+**Usage statistics are optional.** The first time you open MacHub it asks whether to share anonymous usage statistics. Nothing is sent unless you choose Share, and you can change this anytime in Settings › Privacy.
+
+If you share, MacHub sends signals to [TelemetryDeck](https://telemetrydeck.com/privacy), an analytics service that states it hosts data in the European Union and does not store IP addresses. A signal can contain:
+
+- An anonymous identifier: a random ID created on your Mac, salted and hashed on your Mac, then hashed again by TelemetryDeck
+- A session identifier and simple usage counters, such as the date of your first session and how many days and sessions you have used the app
+- The app version and build, the day of the week and the hour
+- Your Mac model, CPU architecture, macOS version, screen size, time zone, language and region
+- Appearance and accessibility settings, such as light or dark mode and Reduce Motion
+- The name of a tool when you open it, and a signal when you press the donate button
+
+It never sends your files, paths, text, commands, logs, device serial numbers, package names, Git URLs or keystore data.
+
+Turning sharing off stops sending. The random ID and the usage counters stay in a preferences file on your Mac (`~/Library/Preferences/com.telemetrydeck.*.plist`) until you delete it, and signals that could not be delivered yet are kept in your Mac's cache.
 
 ## 9. This website
 

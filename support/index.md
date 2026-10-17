@@ -16,6 +16,10 @@ Get the latest MacHub for macOS 12 or later.
 
 [Download .dmg](https://machub.space/download/)
 
+### Support MacHub
+
+If MacHub saves you time, you can [buy me a coffee](https://buymeacoffee.com/huynguyennovem).
+
 ### macOS says MacHub can’t be opened or is from an unidentified developer
 
 MacHub is notarized by Apple, so macOS only asks you to confirm the first launch. If it still blocks the app, right-click MacHub in Applications and choose **Open**, or use **Open Anyway** in System Settings › Privacy & Security. See [the download page](https://machub.space/download/#gatekeeper).
@@ -47,6 +51,8 @@ macOS 12 Monterey or later, on Apple Silicon and Intel.
 ### How do I reset MacHub?
 
 Quit MacHub, then run `defaults delete com.app.machub` in Terminal. This removes bookmarks, saved commands, history, tool paths and preferences. To uninstall, also drag MacHub to the Trash.
+
+To stop sharing anonymous usage statistics, turn off Settings › Privacy › Share anonymous usage data. To also remove the random identifier used for usage statistics, delete the `com.telemetrydeck.*.plist` files in `~/Library/Preferences` (this also resets other apps that use TelemetryDeck).
 
 ---
 

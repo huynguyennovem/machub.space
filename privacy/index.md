@@ -1,10 +1,10 @@
 # MacHub Privacy Policy
 
-> No account, no analytics, no ads. Last updated October 7, 2026.
+> No account, no ads, usage statistics are opt-in. Last updated October 17, 2026.
 
-**Last updated:** October 7, 2026
+**Last updated:** October 17, 2026
 
-This policy explains what the MacHub app and the machub.space website do with information. In short: the app has no account, no analytics, no advertising and no tracking.
+This policy explains what the MacHub app and the machub.space website do with information. In short: the app has no account and no advertising, and it sends anonymous usage statistics only if you choose to share them.
 
 ## 1. Overview
 
@@ -16,7 +16,7 @@ MacHub saves the following in your Mac’s local preferences (`~/Library/Prefere
 
 - Bookmarked files and folders, tags, and the custom editor or command you attach to them
 - Saved Custom Commands
-- Last-used folders, tool paths, theme and sidebar settings
+- Last-used folders, tool paths, theme, sidebar and usage statistics settings
 - History for Path Checker, Payload Decoder, Data Format and Text Diff (up to 50 entries each)
 
 History entries can contain the full text you pasted, including tokens or other secrets. Delete the preferences to remove everything (see [How do I reset MacHub?](https://machub.space/support/#reset)).
@@ -25,11 +25,12 @@ MacHub also writes temporary files, for example the Screenshot OCR capture and i
 
 ## 3. Network requests
 
-MacHub does not check for updates and does not contact the developer. The app makes a network request only when you use one of these features:
+MacHub does not check for updates. The app makes a network request only when you use one of these features or turn on usage statistics:
 
 - **Screenshot OCR › Translate:** sends the recognized text and the target language to Google Translate. Text recognition itself runs on your Mac.
 - **Git Clone › upstream remote:** for github.com repositories, asks the GitHub API (unauthenticated) for the fork’s parent repository.
-- **Settings › Changelog:** loads the changelog page in an in-app web view.
+- **About › Changelog:** loads the changelog page in an in-app web view.
+- **Usage statistics (optional):** if you choose Share, sends anonymous usage signals to TelemetryDeck (see section 8).
 
 Those services handle data under their own privacy policies.
 
@@ -51,9 +52,24 @@ MacHub reads the clipboard only when you press a Paste button. It writes to the 
 
 Passwords you enter for a custom keystore are not saved. They are passed to bundletool as command-line arguments while a conversion runs, so other processes on your Mac could briefly see them. They are masked in MacHub’s on-screen log.
 
-## 8. Analytics, ads and accounts
+## 8. Usage statistics, ads and accounts
 
-The app contains no analytics, crash-reporting or advertising SDKs, and requires no account.
+The app contains no advertising or crash-reporting SDKs and requires no account.
+
+**Usage statistics are optional.** The first time you open MacHub it asks whether to share anonymous usage statistics. Nothing is sent unless you choose Share, and you can change this anytime in Settings › Privacy.
+
+If you share, MacHub sends signals to [TelemetryDeck](https://telemetrydeck.com/privacy), an analytics service that states it hosts data in the European Union and does not store IP addresses. A signal can contain:
+
+- An anonymous identifier: a random ID created on your Mac, salted and hashed on your Mac, then hashed again by TelemetryDeck
+- A session identifier and simple usage counters, such as the date of your first session and how many days and sessions you have used the app
+- The app version and build, the day of the week and the hour
+- Your Mac model, CPU architecture, macOS version, screen size, time zone, language and region
+- Appearance and accessibility settings, such as light or dark mode and Reduce Motion
+- The name of a tool when you open it, and a signal when you press the donate button
+
+It never sends your files, paths, text, commands, logs, device serial numbers, package names, Git URLs or keystore data.
+
+Turning sharing off stops sending. The random ID and the usage counters stay in a preferences file on your Mac (`~/Library/Preferences/com.telemetrydeck.*.plist`) until you delete it, and signals that could not be delivered yet are kept in your Mac's cache.
 
 ## 9. This website
 

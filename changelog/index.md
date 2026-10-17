@@ -2,6 +2,13 @@
 
 > Release notes for MacHub.
 
+## Version 1.1.0 About page and optional usage statistics
+
+This release adds an About page and, only if you choose it, anonymous usage statistics.
+
+- **About:** A new page right under Settings with the version, the changelog, the author on X, the support page and a Buy me a coffee button. Version and Changelog moved here from Settings.
+- **Usage statistics (optional):** MacHub asks once whether to share anonymous usage statistics. Nothing is sent unless you choose Share, and you can change it anytime in Settings › Privacy. See the [Privacy Policy](https://machub.space/privacy/#usage-stats).
+
 ## Version 1.0.0 Initial release
 
 The first public release includes 14 tools in four groups, light and dark themes and a collapsible sidebar.

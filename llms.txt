@@ -1,6 +1,6 @@
 # MacHub
 
-> MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.
+> MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account. Anonymous usage stats are opt-in.
 
 MacHub is a free desktop app for macOS 12 or later (Apple Silicon and Intel) distributed as a DMG from https://machub.space/download/. Full single-file context: https://machub.space/llms-full.txt. Every page has a markdown mirror at its path plus `index.md`.
 
@@ -8,10 +8,10 @@ MacHub is a free desktop app for macOS 12 or later (Apple Silicon and Intel) dis
 
 - Website: https://machub.space/
 - Platform: macOS 12+ only (no iOS, Android, Windows or Linux build is distributed)
-- Version: 1.0.0
+- Version: 1.1.0
 - Price: free
 - Distribution: DMG download only (not on the Mac App Store, because the app runs outside the App Sandbox)
-- Tracking: no account, no analytics, no ads
+- Tracking: no account, no ads; anonymous usage statistics are opt-in (TelemetryDeck)
 - Support email: machub1193@gmail.com
 
 ## Product

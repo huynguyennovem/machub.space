@@ -58,6 +58,7 @@
   <div class="cards-2" style="max-width:46rem;margin-bottom:2rem">
     <div class="card"><h3>Contact</h3><p>Questions, bug reports and feature requests are welcome.</p><p style="margin-top:.8rem"><a class="btn btn-primary" href="mailto:machub1193@gmail.com">Email support</a></p></div>
     <div class="card"><h3>Download</h3><p>Get the latest MacHub for macOS 12 or later.</p><p style="margin-top:.8rem"><a class="btn btn-primary  link-macos-dmg" href="/download/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg><span data-label>Download .dmg</span></a></p></div>
+    <div class="card"><h3>Support MacHub</h3><p>If MacHub saves you time, you can buy the author a coffee.</p><p style="margin-top:.8rem"><a class="btn btn-primary" href="https://buymeacoffee.com/huynguyennovem" rel="noopener">Buy me a coffee</a></p></div>
   </div>
   <div class="faq">
 <details><summary>macOS says MacHub can&rsquo;t be opened or is from an unidentified developer</summary><p>MacHub is notarized by Apple, so macOS only asks you to confirm the first launch. If it still blocks the app, right-click MacHub in Applications and choose <strong>Open</strong>, or use <strong>Open Anyway</strong> in System Settings &rsaquo; Privacy &amp; Security. See <a href="/download/#gatekeeper">the download page</a>.</p></details>
@@ -67,7 +68,7 @@
 <details><summary>Convert &amp; Install fails with INSTALL_FAILED_UPDATE_INCOMPATIBLE</summary><p>The app on your device was signed with a different key than the one MacHub used. Uninstall the existing app from the device, or enable <strong>Use custom keystore</strong> and sign with the original key.</p></details>
 <details><summary>The device list is empty in Device Logs or Convert &amp; Install</summary><p>Connect the device, enable USB debugging, accept the prompt on the device, then click the refresh button next to the device picker. Devices marked <em>unauthorized</em> or <em>offline</em> cannot be used until they are authorized.</p></details>
 <details><summary>Which Macs are supported?</summary><p>macOS 12 Monterey or later, on Apple Silicon and Intel.</p></details>
-<details id="reset"><summary>How do I reset MacHub?</summary><p>Quit MacHub, then run <code>defaults delete com.app.machub</code> in Terminal. This removes bookmarks, saved commands, history, tool paths and preferences. To uninstall, also drag MacHub to the Trash.</p></details>
+<details id="reset"><summary>How do I reset MacHub?</summary><p>Quit MacHub, then run <code>defaults delete com.app.machub</code> in Terminal. This removes bookmarks, saved commands, history, tool paths and preferences. To uninstall, also drag MacHub to the Trash.</p><p>To stop sharing anonymous usage statistics, turn off <strong>Settings &rsaquo; Privacy &rsaquo; Share anonymous usage data</strong>. To also remove the random identifier used for usage statistics, delete the <code>com.telemetrydeck.*.plist</code> files in <code>~/Library/Preferences</code> (this also resets other apps that use TelemetryDeck).</p></details>
   </div>
 </div>
 </main>
@@ -76,7 +77,7 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="/"><img src="/assets/images/icon-192.png" width="34" height="34" alt="">MacHub</a>
-        <p>14 developer tools. One Mac app. Local-first, no account, no tracking.</p>
+        <p>14 developer tools. One Mac app. Local-first, no account. Anonymous usage stats are opt-in.</p>
       </div>
       <div><h4>Product</h4><ul><li><a href="/#tools">Tools</a></li><li><a href="/download/">Download</a></li><li><a href="/changelog/">Changelog</a></li></ul></div>
       <div><h4>Support</h4><ul><li><a href="/support/">Help &amp; FAQ</a></li><li><a href="mailto:machub1193@gmail.com">Email</a></li></ul></div>

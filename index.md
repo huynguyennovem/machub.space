@@ -1,8 +1,8 @@
 # MacHub
 
-> MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.
+> MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account. Anonymous usage stats are opt-in.
 
-MacHub is a free macOS app (v1.0.0, macOS 12+, Apple Silicon and Intel). Distributed as a DMG from https://machub.space/download/.
+MacHub is a free macOS app (v1.1.0, macOS 12+, Apple Silicon and Intel). Distributed as a DMG from https://machub.space/download/.
 
 ## Tools
 
@@ -34,7 +34,7 @@ MacHub is a free macOS app (v1.0.0, macOS 12+, Apple Silicon and Intel). Distrib
 
 ## Privacy
 
-No account, no analytics, no ads. Data stays in local preferences. Network requests happen only when you ask: Google Translate (OCR translation), the GitHub API (fork parent lookup) and the Changelog page. See https://machub.space/privacy/.
+No account and no ads. Data stays in local preferences. Anonymous usage statistics are off unless you choose Share when MacHub asks, and you can change that in Settings › Privacy. Other network requests happen only when you ask: Google Translate (OCR translation), the GitHub API (fork parent lookup) and the Changelog page. See https://machub.space/privacy/.
 
 ## FAQ
 
@@ -44,7 +44,7 @@ Yes. MacHub is free to download and use.
 
 ### Does MacHub collect my data?
 
-No. There is no account, no analytics, no crash reporting and no ads. Your bookmarks, commands and history stay in your Mac’s local preferences. The few network requests the app can make only happen when you ask for them; see [the Privacy Policy](https://machub.space/privacy/).
+Only if you choose to share anonymous usage statistics. There is no account, no crash reporting and no ads. The first time you open MacHub it asks whether to share usage statistics; nothing is sent unless you choose Share, and you can change that anytime in Settings › Privacy. Your bookmarks, commands and history stay in your Mac’s local preferences. The other network requests the app can make only happen when you ask for them; see [the Privacy Policy](https://machub.space/privacy/).
 
 ### Which Macs does it run on?
 

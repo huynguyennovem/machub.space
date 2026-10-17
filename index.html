@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <title>MacHub - 14 Developer Tools for Mac</title>
-<meta name="description" content="MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.">
+<meta name="description" content="MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account. Anonymous usage stats are opt-in.">
 <meta name="robots" content="index, follow">
 <meta name="application-name" content="MacHub">
 <meta name="theme-color" content="#fbf8f7" media="(prefers-color-scheme: light)">
@@ -23,13 +23,13 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://machub.space/">
 <meta property="og:title" content="MacHub - 14 Developer Tools for Mac">
-<meta property="og:description" content="MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.">
+<meta property="og:description" content="MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account. Anonymous usage stats are opt-in.">
 <meta property="og:image" content="https://machub.space/assets/images/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="MacHub - 14 Developer Tools for Mac">
-<meta name="twitter:description" content="MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.">
+<meta name="twitter:description" content="MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account. Anonymous usage stats are opt-in.">
 <meta name="twitter:image" content="https://machub.space/assets/images/og-image.png">
 <script type="application/ld+json">
 {
@@ -38,10 +38,10 @@
   "name": "MacHub",
   "url": "https://machub.space/",
   "image": "https://machub.space/assets/images/app-icon-512.png",
-  "description": "MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account, no tracking.",
+  "description": "MacHub is a free Mac app with 14 developer tools: device logs, APK/AAB/IPA analyzer, AAB to APK converter, payload decoder, diff, OCR, git clone and more. Local-first, no account. Anonymous usage stats are opt-in.",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "macOS 12+",
-  "softwareVersion": "1.0.0",
+  "softwareVersion": "1.1.0",
   "downloadUrl": "https://machub.space/download/",
   "offers": {
     "@type": "Offer",
@@ -78,6 +78,7 @@
     <nav class="nav" id="primary-nav" aria-label="Primary">
       <a href="/#tools">Tools</a>
       <a href="/#privacy">Privacy</a>
+      <a href="/#changelog">Changelog</a>
       <a href="/download/">Download</a>
       <a href="/support/">Support</a>
     </nav>
@@ -93,9 +94,9 @@
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <div class="hero-brand"><img src="/assets/images/app-icon-512.png" width="60" height="60" alt="MacHub app icon" fetchpriority="high"><span class="pill"><b>v1.0.0</b> for macOS</span></div>
+      <div class="hero-brand"><img src="/assets/images/app-icon-512.png" width="60" height="60" alt="MacHub app icon" fetchpriority="high"><span class="pill"><b>v1.1.0</b> for macOS</span></div>
       <h1>14 developer tools. <span class="grad">One Mac app.</span></h1>
-      <p class="hero-sub">Device logs, APK and AAB analysis, payload decoding, diffs, OCR and git in one fast desktop toolbox for mobile and web developers. Local-first, no account, no tracking.</p>
+      <p class="hero-sub">Device logs, APK and AAB analysis, payload decoding, diffs, OCR and git in one fast desktop toolbox for mobile and web developers. Local-first, no account. Anonymous usage stats are opt-in.</p>
       <div class="cta-row"><a class="btn btn-primary btn-lg link-macos-dmg" href="/download/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg><span data-label>Download for Mac (.dmg)</span></a><a class="btn btn-lg" href="#tools">Explore the tools</a></div>
       <p class="cta-meta"><span>Free</span><span>macOS 12+</span><span>Apple Silicon &amp; Intel</span></p>
     </div>
@@ -251,10 +252,10 @@
 
 <section class="section" id="privacy">
   <div class="container">
-    <div class="section-head reveal"><span class="eyebrow">Privacy</span><h2>Built to stay out of your way and out of your data</h2><p>No account, no analytics, no ads. Here is exactly what the app does.</p></div>
+    <div class="section-head reveal"><span class="eyebrow">Privacy</span><h2>Built to stay out of your way and out of your data</h2><p>No account, no ads, and usage statistics only if you opt in. Here is exactly what the app does.</p></div>
     <div class="cards-2">
       <div class="card reveal"><h3>Stays on your Mac</h3><p>Bookmarks, saved commands, last-used folders and the history of the text tools live in your Mac&rsquo;s local preferences. Nothing is synced or uploaded.</p></div>
-      <div class="card reveal"><h3>Only when you ask</h3><ul><li>Translate sends the recognized text to Google Translate</li><li>The git &ldquo;upstream&rdquo; option asks the GitHub API for a fork&rsquo;s parent</li><li>Settings &rsaquo; Changelog opens a web page</li></ul></div>
+      <div class="card reveal"><h3>Only when you ask</h3><ul><li>Translate sends the recognized text to Google Translate</li><li>The git &ldquo;upstream&rdquo; option asks the GitHub API for a fork&rsquo;s parent</li><li>About &rsaquo; Changelog opens a web page</li><li>Usage statistics are sent only if you choose Share</li></ul></div>
       <div class="card reveal"><h3>Honest about permissions</h3><p>Screen Recording for OCR captures, Automation for Terminal and Finder helpers, and optional Full Disk Access for protected files. MacHub runs outside the App Sandbox so it can launch your tools.</p></div>
     </div>
     <p class="reveal" style="margin-top:1.4rem"><a href="/privacy/">Read the full Privacy Policy &rarr;</a></p>
@@ -279,12 +280,27 @@
   </div>
 </section>
 
+<section class="section" id="changelog">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Changelog</span><h2>What&rsquo;s new in MacHub</h2></div>
+    <div class="cards-2">
+      <article class="card reveal"><h3>Version 1.1.0 <time>About page and optional usage statistics</time></h3>
+        <ul><li><strong>About:</strong> A new page with the version, the changelog, the author on X, the support page and a Buy me a coffee button.</li><li><strong>Usage statistics (optional):</strong> Share anonymous usage statistics only if you choose Share, and change it anytime in Settings &rsaquo; Privacy.</li></ul>
+      </article>
+      <article class="card reveal"><h3>Version 1.0.0 <time>Initial release</time></h3>
+        <p>The first public release: 14 tools in four groups, light and dark themes and a collapsible sidebar.</p>
+      </article>
+    </div>
+    <p class="reveal" style="margin-top:1.4rem"><a href="/changelog/">Read the full changelog &rarr;</a></p>
+  </div>
+</section>
+
 <section class="section" id="faq">
   <div class="container">
     <div class="section-head reveal"><span class="eyebrow">FAQ</span><h2>Quick answers</h2></div>
     <div class="faq reveal">
 <details><summary>Is MacHub free?</summary><p>Yes. MacHub is free to download and use.</p></details>
-<details><summary>Does MacHub collect my data?</summary><p>No. There is no account, no analytics, no crash reporting and no ads. Your bookmarks, commands and history stay in your Mac&rsquo;s local preferences. The few network requests the app can make only happen when you ask for them; see <a href="/privacy/">the Privacy Policy</a>.</p></details>
+<details><summary>Does MacHub collect my data?</summary><p>Only if you choose to share anonymous usage statistics. There is no account, no crash reporting and no ads. The first time you open MacHub it asks whether to share usage statistics; nothing is sent unless you choose Share, and you can change that anytime in Settings &rsaquo; Privacy. Your bookmarks, commands and history stay in your Mac&rsquo;s local preferences. The other network requests the app can make only happen when you ask for them; see <a href="/privacy/">the Privacy Policy</a>.</p></details>
 <details><summary>Which Macs does it run on?</summary><p>macOS 12 Monterey or later, on Apple Silicon and Intel. Automatic language detection in Screenshot OCR for Chinese, Japanese and Korean needs macOS 13 or later.</p></details>
 <details><summary>Why isn&rsquo;t it on the Mac App Store?</summary><p>MacHub launches tools such as adb, git and bundletool and reads files you choose, so it runs outside the App Sandbox. That is why it is distributed as a DMG from this site.</p></details>
 <details><summary>Do I need the Android SDK, Flutter or git installed?</summary><p>Only for the tools that use them. MacHub looks in the usual locations, shows an install hint when something is missing, and lets you point it at the right file with <strong>Set path&hellip;</strong>.</p></details>
@@ -297,7 +313,7 @@
   <div class="container">
     <div class="cta reveal">
       <h2>Get MacHub for your Mac</h2>
-      <p>Free. Version 1.0.0. macOS 12 or later on Apple Silicon and Intel.</p>
+      <p>Free. Version 1.1.0. macOS 12 or later on Apple Silicon and Intel.</p>
       <div class="cta-row"><a class="btn btn-primary btn-lg link-macos-dmg" href="/download/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg><span data-label>Download for Mac (.dmg)</span></a></div>
     </div>
   </div>
@@ -308,7 +324,7 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="/"><img src="/assets/images/icon-192.png" width="34" height="34" alt="">MacHub</a>
-        <p>14 developer tools. One Mac app. Local-first, no account, no tracking.</p>
+        <p>14 developer tools. One Mac app. Local-first, no account. Anonymous usage stats are opt-in.</p>
       </div>
       <div><h4>Product</h4><ul><li><a href="/#tools">Tools</a></li><li><a href="/download/">Download</a></li><li><a href="/changelog/">Changelog</a></li></ul></div>
       <div><h4>Support</h4><ul><li><a href="/support/">Help &amp; FAQ</a></li><li><a href="mailto:machub1193@gmail.com">Email</a></li></ul></div>

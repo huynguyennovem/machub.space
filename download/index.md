@@ -1,10 +1,10 @@
 # Download MacHub for Mac
 
-> MacHub v1.0.0 for macOS 12+, Apple Silicon and Intel. Free.
+> MacHub v1.1.0 for macOS 12+, Apple Silicon and Intel. Free.
 
 One DMG for Apple Silicon and Intel Macs. Free.
 
-- **Version:** 1.0.0
+- **Version:** 1.1.0
 - **Requires:** macOS 12 or later
 - **Architecture:** Apple Silicon & Intel
 - **Price:** Free
