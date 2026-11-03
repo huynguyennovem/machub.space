@@ -9,6 +9,6 @@
     "secret:turnstile": "wrangler secret put TURNSTILE_SECRET_KEY"
   },
   "devDependencies": {
-    "wrangler": "^4.0.0"
+    "wrangler": "^4.156.0"
   }
 }
