@@ -56,6 +56,9 @@
 <div class="container">
   <div class="page-head"><span class="eyebrow">Changelog</span><h1>What&rsquo;s new in MacHub</h1></div>
   <div class="policy">
+    <div class="release"><h2>Version 1.2.0 <time>Git Setup syncs existing folders</time></h2>
+    <p>The Git Clone tool is now Git Setup and can set up remotes for a folder you already have, without cloning.</p>
+    <ul><li><strong>Sync existing folder:</strong> A new mode points an existing folder at the repository&rsquo;s remotes without cloning. It runs git init only when the folder is not a repository yet, then adds or updates origin (and the optional web and upstream remotes). It never fetches or pulls, so your files stay untouched.</li><li><strong>Renamed:</strong> Git Clone is now Git Setup, since it both clones and wires up remotes.</li></ul></div>
     <div class="release"><h2>Version 1.1.0 <time>About page and optional usage statistics</time></h2>
     <p>This release adds an About page and, only if you choose it, anonymous usage statistics.</p>
     <ul><li><strong>About:</strong> A new page right under Settings with the version, the changelog, the author on X, the support page and a Buy me a coffee button. Version and Changelog moved here from Settings.</li><li><strong>Usage statistics (optional):</strong> MacHub asks once whether to share anonymous usage statistics. Nothing is sent unless you choose Share, and you can change it anytime in Settings &rsaquo; Privacy. See the <a href="/privacy/#usage-stats">Privacy Policy</a>.</li></ul></div>

@@ -30,7 +30,7 @@ MacHub works on its own. Some tools use command-line programs you install separa
 
 - **Device Logs:** `adb` (Android platform-tools), `flutter`, `idevicesyslog` (libimobiledevice) and Xcode’s `xcrun`
 - **AAB to APK:** `bundletool` (`brew install bundletool`), plus Java if you use a `bundletool.jar`, and `adb` for installing
-- **Git Clone and Project Analyzer:** `git`
+- **Git Setup and Project Analyzer:** `git`
 - **Package Analyzer:** `apksigner` from the Android SDK build-tools is optional
 
 ## Permissions you may be asked for

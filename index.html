@@ -63,7 +63,7 @@
     "AAB to APK: Convert an Android App Bundle into an installable universal APK with bundletool, then install it on a connected device.",
     "Screenshot OCR: Capture any region and read its text with Apple Vision, on your Mac. Optionally translate it into 15 languages.",
     "Custom Commands: Save the shell commands you keep retyping and run them in the background or in Terminal.",
-    "Git Clone: Clone through the right SSH account alias and add web and upstream remotes in one go."
+    "Git Setup: Clone a repo or sync remotes into a folder you already have, through the right SSH account alias."
   ]
 }
 </script>
@@ -122,7 +122,7 @@
           <span class="g">Utilities</span>
           <span class="t" style="--c:#a855f7">Screenshot OCR</span>
           <span class="t" style="--c:#f59e0b">Custom Commands</span>
-          <span class="t" style="--c:#f43f5e">Git Clone</span>
+          <span class="t" style="--c:#f43f5e">Git Setup</span>
           </aside>
           <div class="mock-main">
             <div class="mock-title"><b>Device Logs</b><span>Pixel 8 &middot; Android 15</span></div>
@@ -175,7 +175,7 @@
 <div class="tool-group"><h3>Utilities</h3><div class="tool-grid">
 <article class="tool-card reveal" style="--c:#a855f7"><div class="tool-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-scan"/></svg></div><h3>Screenshot OCR</h3><p>Capture any region and read its text with Apple Vision, on your Mac. Optionally translate it into 15 languages.</p></article>
 <article class="tool-card reveal" style="--c:#f59e0b"><div class="tool-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-terminal"/></svg></div><h3>Custom Commands</h3><p>Save the shell commands you keep retyping and run them in the background or in Terminal.</p></article>
-<article class="tool-card reveal" style="--c:#f43f5e"><div class="tool-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-branch"/></svg></div><h3>Git Clone</h3><p>Clone through the right SSH account alias and add web and upstream remotes in one go.</p></article>
+<article class="tool-card reveal" style="--c:#f43f5e"><div class="tool-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-branch"/></svg></div><h3>Git Setup</h3><p>Clone a repo or sync remotes into a folder you already have, through the right SSH account alias.</p></article>
 </div></div>
   </div>
 </section>
@@ -232,7 +232,7 @@
         <ul class="ticks"><li>Preview the exact commands before running them</li><li>Optional <code>web</code> and <code>upstream</code> remotes, with fork parents detected on GitHub</li></ul>
       </div>
       <div class="panel clone" aria-hidden="true">
-        <div class="panel-title">Git Clone<span>~/.ssh/config</span></div>
+        <div class="panel-title">Git Setup<span>~/.ssh/config</span></div>
         <div class="row on"><span>github-work</span><span>HostName github.com</span></div>
         <div class="row"><span>github-personal</span><span>HostName github.com</span></div>
         <pre><b>$</b> git clone git@github-work:acme/app.git

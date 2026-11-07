@@ -2,6 +2,13 @@
 
 > Release notes for MacHub.
 
+## Version 1.2.0 Git Setup syncs existing folders
+
+The Git Clone tool is now Git Setup and can set up remotes for a folder you already have, without cloning.
+
+- **Sync existing folder:** A new mode points an existing folder at the repository's remotes without cloning. It runs git init only when the folder is not a repository yet, then adds or updates origin (and the optional web and upstream remotes). It never fetches or pulls, so your files stay untouched.
+- **Renamed:** Git Clone is now Git Setup, since it both clones and wires up remotes.
+
 ## Version 1.1.0 About page and optional usage statistics
 
 This release adds an About page and, only if you choose it, anonymous usage statistics.

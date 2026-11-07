@@ -28,7 +28,7 @@ MacHub also writes temporary files, for example the Screenshot OCR capture and i
 MacHub does not check for updates. The app makes a network request only when you use one of these features or turn on usage statistics:
 
 - **Screenshot OCR › Translate:** sends the recognized text and the target language to Google Translate. Text recognition itself runs on your Mac.
-- **Git Clone › upstream remote:** for github.com repositories, asks the GitHub API (unauthenticated) for the fork’s parent repository.
+- **Git Setup › upstream remote:** for github.com repositories, asks the GitHub API (unauthenticated) for the fork’s parent repository.
 - **About › Changelog:** loads the changelog page in an in-app web view.
 - **Usage statistics (optional):** if you choose Share, sends anonymous usage signals to TelemetryDeck (see section 8).
 
@@ -36,7 +36,7 @@ Those services handle data under their own privacy policies.
 
 ## 4. Tools you run
 
-Git Clone, Device Logs, AAB to APK, Custom Commands and similar tools run programs such as `git`, `adb` and `bundletool` with your user permissions. Any network access by those programs, or by commands you write, is governed by the programs and services involved. MacHub reads host aliases from `~/.ssh/config` (not your keys) and checks for `~/.android/debug.keystore`.
+Git Setup, Device Logs, AAB to APK, Custom Commands and similar tools run programs such as `git`, `adb` and `bundletool` with your user permissions. Any network access by those programs, or by commands you write, is governed by the programs and services involved. MacHub reads host aliases from `~/.ssh/config` (not your keys) and checks for `~/.android/debug.keystore`.
 
 ## 5. Permissions
 

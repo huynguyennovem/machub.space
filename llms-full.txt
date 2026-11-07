@@ -39,7 +39,7 @@ MacHub is a free macOS app (v1.1.0, macOS 12+, Apple Silicon and Intel). Distrib
 
 - **Screenshot OCR**: Capture any region and read its text with Apple Vision, on your Mac. Optionally translate it into 15 languages.
 - **Custom Commands**: Save the shell commands you keep retyping and run them in the background or in Terminal.
-- **Git Clone**: Clone through the right SSH account alias and add web and upstream remotes in one go.
+- **Git Setup**: Clone a repo or sync remotes into a folder you already have, through the right SSH account alias.
 
 ## Privacy
 
@@ -116,7 +116,7 @@ MacHub works on its own. Some tools use command-line programs you install separa
 
 - **Device Logs:** `adb` (Android platform-tools), `flutter`, `idevicesyslog` (libimobiledevice) and Xcode’s `xcrun`
 - **AAB to APK:** `bundletool` (`brew install bundletool`), plus Java if you use a `bundletool.jar`, and `adb` for installing
-- **Git Clone and Project Analyzer:** `git`
+- **Git Setup and Project Analyzer:** `git`
 - **Package Analyzer:** `apksigner` from the Android SDK build-tools is optional
 
 ## Permissions you may be asked for
@@ -207,6 +207,13 @@ To stop sharing anonymous usage statistics, turn off Settings › Privacy › Sh
 
 > Release notes for MacHub.
 
+## Version 1.2.0 Git Setup syncs existing folders
+
+The Git Clone tool is now Git Setup and can set up remotes for a folder you already have, without cloning.
+
+- **Sync existing folder:** A new mode points an existing folder at the repository's remotes without cloning. It runs git init only when the folder is not a repository yet, then adds or updates origin (and the optional web and upstream remotes). It never fetches or pulls, so your files stay untouched.
+- **Renamed:** Git Clone is now Git Setup, since it both clones and wires up remotes.
+
 ## Version 1.1.0 About page and optional usage statistics
 
 This release adds an About page and, only if you choose it, anonymous usage statistics.
@@ -272,7 +279,7 @@ MacHub also writes temporary files, for example the Screenshot OCR capture and i
 MacHub does not check for updates. The app makes a network request only when you use one of these features or turn on usage statistics:
 
 - **Screenshot OCR › Translate:** sends the recognized text and the target language to Google Translate. Text recognition itself runs on your Mac.
-- **Git Clone › upstream remote:** for github.com repositories, asks the GitHub API (unauthenticated) for the fork’s parent repository.
+- **Git Setup › upstream remote:** for github.com repositories, asks the GitHub API (unauthenticated) for the fork’s parent repository.
 - **About › Changelog:** loads the changelog page in an in-app web view.
 - **Usage statistics (optional):** if you choose Share, sends anonymous usage signals to TelemetryDeck (see section 8).
 
@@ -280,7 +287,7 @@ Those services handle data under their own privacy policies.
 
 ## 4. Tools you run
 
-Git Clone, Device Logs, AAB to APK, Custom Commands and similar tools run programs such as `git`, `adb` and `bundletool` with your user permissions. Any network access by those programs, or by commands you write, is governed by the programs and services involved. MacHub reads host aliases from `~/.ssh/config` (not your keys) and checks for `~/.android/debug.keystore`.
+Git Setup, Device Logs, AAB to APK, Custom Commands and similar tools run programs such as `git`, `adb` and `bundletool` with your user permissions. Any network access by those programs, or by commands you write, is governed by the programs and services involved. MacHub reads host aliases from `~/.ssh/config` (not your keys) and checks for `~/.android/debug.keystore`.
 
 ## 5. Permissions
 

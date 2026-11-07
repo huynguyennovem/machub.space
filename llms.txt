@@ -35,7 +35,7 @@ MacHub is a free desktop app for macOS 12 or later (Apple Silicon and Intel) dis
 - **AAB to APK**: Convert an Android App Bundle into an installable universal APK with bundletool, then install it on a connected device.
 - **Screenshot OCR**: Capture any region and read its text with Apple Vision, on your Mac. Optionally translate it into 15 languages.
 - **Custom Commands**: Save the shell commands you keep retyping and run them in the background or in Terminal.
-- **Git Clone**: Clone through the right SSH account alias and add web and upstream remotes in one go.
+- **Git Setup**: Clone a repo or sync remotes into a folder you already have, through the right SSH account alias.
 
 ## Support and legal
 

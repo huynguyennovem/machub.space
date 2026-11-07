@@ -30,7 +30,7 @@ MacHub is a free macOS app (v1.1.0, macOS 12+, Apple Silicon and Intel). Distrib
 
 - **Screenshot OCR**: Capture any region and read its text with Apple Vision, on your Mac. Optionally translate it into 15 languages.
 - **Custom Commands**: Save the shell commands you keep retyping and run them in the background or in Terminal.
-- **Git Clone**: Clone through the right SSH account alias and add web and upstream remotes in one go.
+- **Git Setup**: Clone a repo or sync remotes into a folder you already have, through the right SSH account alias.
 
 ## Privacy
 
